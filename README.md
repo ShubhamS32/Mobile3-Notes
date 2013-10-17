@@ -19,3 +19,5 @@ Note that git will not ignore a file that was already tracked before a rule was 
 
 The goal of this guide is to present a set of best practices and style
 prescriptions for Android, Iphone and other mobile platform development.
+
+Demo 
