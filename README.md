@@ -17,7 +17,7 @@ Note that git will not ignore a file that was already tracked before a rule was 
 # Mobile Best Practices
 
 
-The goal of this guide is to present a set of best practices and style prescriptions for Android, Iphone and other mobile platform development. The practices that we follow helps other developers to understand the code much easily , the naming and the coding convensation not only helps the developers working in the same team but also very helpfull for any new person to understand and read the code.
+The goal of this guide is to present a set of best practices and style prescriptions for Android, Iphone and other mobile platform development. The practices that we follow helps other developers to understand the code much easily , the naming and the coding convensation not only help the developers working in a team but also helpfull for any new person to understand and read the code.
 
 ##Few of the naming convenstions that the mobile team follows are : 
 * [Naming Projects](#naming-projects)
@@ -28,7 +28,7 @@ The goal of this guide is to present a set of best practices and style prescript
 * [Naming View Files](#naming-view-files)
 * [Naming View elements](#naming-view-elements)
 
-##Naming Projects
+###Naming Projects
 
 * The project name should be the name of the application that you are developing.
 * Use simple and short name that reflects the use or the purpose of the application.
@@ -38,7 +38,7 @@ The goal of this guide is to present a set of best practices and style prescript
 		AndroidTwitterConnect
 	```
 
-##Naming Packages
+###Naming Packages
 
 * Usually the number of classes created in an application is quite high which becomes difficult to maintain , so using the packages for the classes performing simillar functions reduces the complexity of the project.
 * Naming convenction of the pakages helps to differentiate the classes that are working on functionality like database , web services and adapters .
@@ -57,7 +57,7 @@ The goal of this guide is to present a set of best practices and style prescript
 		com.headsuprules.adapter
 		com.headsuprules.webservice
 	```	 
-##Naming Classes
+###Naming Classes
 
 * The names should follow the camel case naming convention and should always start with capital letter.
 	eg. MainActivity , ImageListAdapter etc.
@@ -81,7 +81,7 @@ The goal of this guide is to present a set of best practices and style prescript
 * For simple classes the names also should be simple to reflect the working of the class.
 	eg. Parser , DbHandler , ImageReceiver etc. 
 
-##Naming Methods
+###Naming Methods
 * The method name should also follow the camel case naming convention and should always start with small letter.
 
 	```Android
@@ -98,7 +98,7 @@ The goal of this guide is to present a set of best practices and style prescript
 	```
 * Method name should reflects the functionality of the method.
 
-##Naming Objects
+###Naming Objects
 
 * Object name should also follow the camel case naming convention and should always start with small letter.
 
@@ -114,13 +114,15 @@ The goal of this guide is to present a set of best practices and style prescript
 		Button buttonNext;
 		Button buttonPrevious;
 	```
-##Naming View Files
+###Naming View Files
 
 * View files or the layout files should always have small letters and if the name is large then words saperated by underscore.
 	eg. 	image_view_list.xml 
 		map_fragment.xml etc.
 
-##Naming View Elements
+###Naming View Elements
 
 * Elements names or id should always be in camel case starting with small letter.
+
+
 
