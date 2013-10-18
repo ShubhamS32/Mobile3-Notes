@@ -59,7 +59,7 @@ The generated application should have the following file structure:
 		sencha.cfg		# Configuration file for Sencha Cmd
 		plugin.xml		# Plugin for Sencha Cmd
 		
-		touch/                  # A copy of the Sencha Touch SDK
+		touch			# A copy of the Sencha Touch SDK
 		cmd/               	# Sencha Touch-specific content for Sencha Cmd
 		sencha.cfg     		# Configuration file for Sencha Cmd
 		plugin.xml      	# Plugin for Sencha Cmd
