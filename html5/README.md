@@ -51,14 +51,13 @@ To try it out, simply point any WebKit-based browser to `http://local.myapp.com`
 ##Basic Application Structure :
 
 The generated application should have the following file structure:
-		
-		.sencha/                # Sencha-specific files (e.g. configuration)
-		app/              	# Application-specific content
-		sencha.cfg      	# Configuration file for Sencha Cmd
-		plugin.xml     		# Plugin for Sencha Cmd
-		workspace/          	# Workspace-specific content (see below)
-		sencha.cfg      	# Configuration file for Sencha Cmd
-		plugin.xml      	# Plugin for Sencha Cmd
+		.sencha/		# Sencha-specific files (e.g. configuration)
+		app/			# Application-specific content
+		sencha.cfg		# Configuration file for Sencha Cmd
+		plugin.xml		# Plugin for Sencha Cmd
+		workspace/		# Workspace-specific content (see below)
+		sencha.cfg		# Configuration file for Sencha Cmd
+		plugin.xml		# Plugin for Sencha Cmd
 
 		touch/                  # A copy of the Sencha Touch SDK
 		cmd/               	# Sencha Touch-specific content for Sencha Cmd
