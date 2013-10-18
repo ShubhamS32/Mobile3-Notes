@@ -17,9 +17,9 @@ Note that git will not ignore a file that was already tracked before a rule was 
 # Mobile Best Practices
 
 
-The goal of this guide is to present a set of best practices and style prescriptions for Android, Iphone and other mobile platform development. The practices that we follow helps other developers to understand the code much easily , the naming and the coding convensation not only help the developers working in a team but also helpfull for any new person to understand and read the code.
+The goal of this guide is to present a set of best practices and style prescriptions for Android, Iphone and other mobile platform development. The practices that we follow helps other developers to understand the code much easily , the naming and the coding convention not only help the developers working in a team but also helpfull for any new person to understand and read the code.
 
-##Few of the naming convenstions that the mobile team follows are : 
+##Naming conventions that the mobile team follows are : 
 * [Naming Projects](#naming-projects)
 * [Naming Packages](#naming-packages)
 * [Naming Classes](#naming-classes)
@@ -41,7 +41,7 @@ The goal of this guide is to present a set of best practices and style prescript
 ###Naming Packages
 
 * Usually the number of classes created in an application is quite high which becomes difficult to maintain , so using the packages for the classes performing simillar functions reduces the complexity of the project.
-* Naming convenction of the pakages helps to differentiate the classes that are working on functionality like database , web services and adapters .
+* Naming convention of the pakages helps to differentiate the classes that are working on functionality like database , web services and adapters .
 	
 	```Android
 		com.webonise.projectname
@@ -57,6 +57,7 @@ The goal of this guide is to present a set of best practices and style prescript
 		com.headsuprules.adapter
 		com.headsuprules.webservice
 	```	 
+
 ###Naming Classes
 
 * The names should follow the camel case naming convention and should always start with capital letter.
@@ -114,13 +115,27 @@ The goal of this guide is to present a set of best practices and style prescript
 		Button buttonNext;
 		Button buttonPrevious;
 	```
+
 ###Naming View Files
 
 * View files or the layout files should always have small letters and if the name is large then words saperated by underscore.
 	eg. 	image_view_list.xml 
+		
 		map_fragment.xml etc.
 
 ###Naming View Elements
 
 * Elements names or id should always be in camel case starting with small letter.
+
+
+##Coding convention followed by mobile team are :
+
+* [Naming Projects](#naming-projects)
+* [Naming Packages](#naming-packages)
+* [Naming Classes](#naming-classes)
+* [Naming Methods](#naming-methods)
+* [Naming Objects](#naming-Objects)
+* [Naming View Files](#naming-view-files)
+* [Naming View elements](#naming-view-elements)
+
 
