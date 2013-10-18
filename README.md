@@ -124,5 +124,3 @@ The goal of this guide is to present a set of best practices and style prescript
 
 * Elements names or id should always be in camel case starting with small letter.
 
-
-
