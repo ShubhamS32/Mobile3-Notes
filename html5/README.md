@@ -133,12 +133,12 @@ From a user's point of view, your application is simply a collection of views. A
 
 The easiest way to create a view is to use Ext.create with an existing Component. For example, if we wanted to create a simple Panel with some HTML inside, we can use following code. (gist link) 
 
-	```Html
+	
 		Ext.create('Ext.Panel', {
 		html: 'Welcome to my app',
 		fullscreen: true
 		});
-	```
+	
 
 
 
