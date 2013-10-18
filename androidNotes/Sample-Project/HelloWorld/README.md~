@@ -8,14 +8,10 @@
 	* **Application Name** is the app name that appears to users. For this project, use `"HelloWorld"`.
 	* **Project Name** is the name of your project directory and the name visible in Eclipse.
 	* **Package Name** is the package namespace for your app (following the same rules as packages in the Java programming language). Your package name must be unique across all packages installed on the Android system. For this reason, it's generally best if you use a name that begins with the reverse domain name of your organization or publisher entity. For this project, you can use something like `"com.sample.helloworld"`.
-
 	* **Minimum Required SDK** is the lowest version of Android that your app supports, indicated using the API level. To support as many devices as possible, you should set this to the lowest version available that allows your app to provide its core feature set. If any feature of your app is possible only on newer versions of Android and it's not critical to the app's core feature set, you can enable the feature only when running on the versions that support it (as discussed in Supporting Different Platform Versions). Leave this set to the default value for this project.
-
 	* **Target SDK** indicates the highest version of Android (also using the API level) with which you have tested with your application.
 As new versions of Android become available, you should test your app on the new version and update this value to match the latest API level in order to take advantage of new platform features.
-
 	* **Compile With** is the platform version against which you will compile your app. By default, this is set to the latest version of Android available in your SDK. (It should be `Android 4.1` or greater; if you don't have such a version available, you must install one using the SDK Manager). You can still build your app to support older versions, but setting the build target to the latest version allows you to enable new features and optimize your app for a great user experience on the latest devices.
-
 	* **Theme** specifies the Android UI style to apply for your app. You can leave this alone.
 
 Click **Next**.
@@ -23,9 +19,7 @@ Click **Next**.
 4. On the next screen to configure the project, leave the default selections and click **Next**.
 
 5. The next screen can help you create a launcher icon for your app.
-
 You can customize an icon in several ways and the tool generates an icon for all screen densities. Before you publish your app, you should be sure your icon meets the specifications defined in the Iconography design guide.
-
 Click **Next**.
 
 6. Now you can select an activity template from which to begin building your app.

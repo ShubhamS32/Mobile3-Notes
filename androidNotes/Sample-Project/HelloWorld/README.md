@@ -15,11 +15,15 @@ As new versions of Android become available, you should test your app on the new
 	* **Theme** specifies the Android UI style to apply for your app. You can leave this alone.
 
 Click **Next**.
+
 4. On the next screen to configure the project, leave the default selections and click **Next**.
+
 5. The next screen can help you create a launcher icon for your app.
 You can customize an icon in several ways and the tool generates an icon for all screen densities. Before you publish your app, you should be sure your icon meets the specifications defined in the Iconography design guide.
 Click **Next**.
+
 6. Now you can select an activity template from which to begin building your app.
 For this project, select **BlankActivity** and click **Next**.
+
 7. Leave all the details for the activity in their default state and click Finish.
 
