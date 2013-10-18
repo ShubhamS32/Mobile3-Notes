@@ -51,6 +51,7 @@ To try it out, simply point any WebKit-based browser to `http://local.myapp.com`
 ##Basic Application Structure :
 
 The generated application should have the following file structure:
+
 		.sencha/		# Sencha-specific files (e.g. configuration)
 		app/			# Application-specific content
 		sencha.cfg		# Configuration file for Sencha Cmd
@@ -60,41 +61,41 @@ The generated application should have the following file structure:
 		plugin.xml		# Plugin for Sencha Cmd
 		
 		touch			# A copy of the Sencha Touch SDK
-		cmd/               	# Sencha Touch-specific content for Sencha Cmd
-		sencha.cfg     		# Configuration file for Sencha Cmd
-		plugin.xml      	# Plugin for Sencha Cmd
-		src/                	# The Sencha Touch source
-		sencha-touch-*.js   	# Pre-compiled and bootstrap files
+		cmd/			# Sencha Touch-specific content for Sencha Cmd
+		sencha.cfg		# Configuration file for Sencha Cmd
+		plugin.xml		# Plugin for Sencha Cmd
+		src/			# The Sencha Touch source
+		sencha-touch-*.js	# Pre-compiled and bootstrap files
 		...
-		app                     # Your application's source code in MVC structure
-		controller
-		model
-		profile
-		store
-		view
-		Main.js       		# The main view of the application
-		resources
-		css
-		app.css        		# The main stylesheet, compiled from app.scss
+		app			# Your application's source code in MVC structure
+		controller	
+		model	
+		profile	
+		store	
+		view	
+		Main.js			# The main view of the application
+		resources	
+		css	
+		app.css			# The main stylesheet, compiled from app.scss
 
 		sass
-		app.scss       		# The Sass file which compiles to app.css above,
+		app.scss		# The Sass file which compiles to app.css above,
 					# includes Sencha Touch 2 theme by default
 
-		icons             	# Application icons for all mobile devices
+		icons			# Application icons for all mobile devices
 					# When replacing these default images with your own,
 					# make sure the file name and the dimension stays exactly the same
 		...
-		loading 	        # Application start-up screens for iOS devices
+		loading			# Application start-up screens for iOS devices
 					# Similarly to icons, make sure the file names and
 					# dimension stays the same
 		...
-		images             	# Put other images used by your application here
+		images			# Put other images used by your application here
 
 		index.html
-		app.js                  # Contains application's initialization logics
-		app.json               	# Configuration for deployment
-		packager.json          	# Configuration for native packaging
+		app.js			# Contains application's initialization logics
+		app.json		# Configuration for deployment
+		packager.json		# Configuration for native packaging
 
 	```
 **app.js**  (view):
