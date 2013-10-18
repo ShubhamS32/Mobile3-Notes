@@ -134,7 +134,6 @@ The goal of this guide is to present a set of best practices and style prescript
 * [Globalizing variables](#globalizing-variables)
 * [Avoid long methods](#avoid-long-methods)
 * [Reusability](#reusability)
-* [Follow design patterns](#follow-design-patterns)
 
 
 ###Packaging
@@ -192,6 +191,7 @@ The goal of this guide is to present a set of best practices and style prescript
 ###Globalizing variables
 
 * It is a good practice to use less number of global variables and try using local variables. 
+
 **Where to use global variables?** In a class where there are more functions that are working on the same object and when the object's size is large then its not good to create the same object again and again to use it in different methods. At that time declare the object as global so as to use it in all the methods. 
 
 		ListView listview;
@@ -210,13 +210,7 @@ The goal of this guide is to present a set of best practices and style prescript
 			BasicNameValuePair mBasicNameValuePairKey=new BasicNameValuePair("key", "23f6a0ab24185952101705");
 			listKeyValuePair.add(mBasicNameValuePairKey);
 			BasicNameValuePair mBasicNameValuePairQ=new BasicNameValuePair("q", "94301");
-			listKeyValuePair.add(mBasicNameValuePairQ);
-			BasicNameValuePair mBasicNameValuePairFormat=new BasicNameValuePair("format", "json");
-			listKeyValuePair.add(mBasicNameValuePairFormat);
-			BasicNameValuePair mBasicNameValuePairNumOfDay=new BasicNameValuePair("num_of_days", "5");
-			listKeyValuePair.add(mBasicNameValuePairNumOfDay);
-			
-		
+			listKeyValuePair.add(mBasicNameValuePairQ);		
 		}
 	
 		public void setJsonDataInModel(String result) {
@@ -239,7 +233,66 @@ The goal of this guide is to present a set of best practices and style prescript
 		textViewDescription.setText(weatherModel.getStaticComponentModel().getStringWeatherDesc());
 		}
 
-###Avoid long methods
 ###Reusability
-###Follow design patterns
+
+* Methods created should be simple and short , reflecting the use of the method in two points .
+	* What it accepts as input.
+	* What it gives as output.
+
+This not only makes the functions easy to be understand but also increases the usability of the function.
+
+* Create such methods that can be accessed not only by the native class but can also be called by other classes as well.
+Such functions reduces the line of code aldo increasing the usability of of the function.
+
+Here is a example of a function that accepts parameters `JSONArray,int` and return `String`. 
+
+		private String convertJsonDate(JSONArray jsonArray, int i)throws JSONException, ParseException {
+			String jsonDate = jsonArray.getJSONObject(i).getString("date");
+
+			SimpleDateFormat jsonDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+			Date mydate = new Date();
+			mydate = jsonDateFormat.parse(jsonDate);
+
+			Log.i(TAG,mydate+"");
+			SimpleDateFormat jsonDateFormatAction = new SimpleDateFormat("d MMM yyyy");
+			String formatedDate = jsonDateFormatAction.format(mydate);
+		
+			ModifyDateHelper modifyDateHelper=new ModifyDateHelper();
+			String stringDate=modifyDateHelper.addSuffixToDate(jsonDateFormatAction,formatedDate);
+
+			return stringDate;
+		}
+
+* Functions should be short , don't include all the functionality in a single function instead use a set of functions to do different tasks.
+
+		public WeatherModel weatherJsonParser(String result) {
+		...
+			getCurrentConditionData(jsonData);
+			weatherModel.setStaticComponentModel(staticComponentModel);
+		...
+			getWeatherItemList(jsonData);
+			weatherModel.setWeatherElementModelsList(weatherElementList);
+		}
+		return weatherModel;
+		}
+
+		private void getWeatherItemList(JSONObject jsonData) {
+			...
+			for (int i = 0; i < jsonArray.length(); i++) {
+				weatherListModel.setStringDate(convertJsonDate(jsonArray, i));
+				....
+				weatherElementList.add(i, weatherListModel);
+			}
+		}
+
+		private void getCurrentConditionData(JSONObject jsonData) 
+			....
+			convertJsonDate(jsonArray,numberItem);
+		}
+
+		private String convertJsonDate(JSONArray jsonArray, int i)throws JSONException, ParseException {
+		.....
+
+		return stringDate;
+		}
 
