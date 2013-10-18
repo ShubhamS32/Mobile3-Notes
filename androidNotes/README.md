@@ -130,12 +130,116 @@ The goal of this guide is to present a set of best practices and style prescript
 
 ##Coding convention followed by mobile team are :
 
-* [Naming Projects](#naming-projects)
-* [Naming Packages](#naming-packages)
-* [Naming Classes](#naming-classes)
-* [Naming Methods](#naming-methods)
-* [Naming Objects](#naming-Objects)
-* [Naming View Files](#naming-view-files)
-* [Naming View elements](#naming-view-elements)
+* [Packaging](#packaging)
+* [Globalizing variables](#globalizing-variables)
+* [Avoid long methods](#avoid-long-methods)
+* [Reusability](#reusability)
+* [Follow design patterns](#follow-design-patterns)
 
+
+###Packaging
+
+* Create packages for the classes those are created for the simillar purpose. These classes usually perform the same function but the data or objects given to these classes are different. Such an example could be an application with two or more activities and all the activities have a list view with different list content. ie. the list item in both the list are different. So one has to create two different classes to handle the list content but both the classes does the same function to generate the list.
+	
+	The first `List` in the `FirstActivity` class in package `com.sample.hellolist` content is : 
+		
+		TextView textViewName
+		TextView textViewLocation
+
+	while the second `List` in the `SecondActivity` class in package `com.sample.hellolist` content is :
+
+		ImageView imageViewPic
+		TextView textViewName
+
+	so the `adapter` to populate the lists will be different but the will be in the same package `com.sample.hellolist.adapter`.
+	That will be `FirstListAdapter` and `SecondListAdapter` in the same package `com.sample.hellolist.adapter`.
+
+**FirstListAdapter**
+
+		public View getView(int position, View convertView, ViewGroup parent) {
+		TextView textViewRuleName = null;
+		TextView textViewRuleLocation = null;
+		if(convertView == null)
+			convertView = mInflater.inflate(R.layout.rules_listview_item, null);
+
+		textViewName =(TextView)convertView.findViewById(R.id.textViewName);
+		textViewLocation =(TextView)convertView.findViewById(R.id.textViewLocation);
+
+		textVieweName.setText(rulesDBModels.get(position).getName());
+		textVieweName.setText(rulesDBModels.get(position).getName());
+
+		return convertView;
+		}
+
+**SecondListAdapter**
+		
+		public View getView(int position, View convertView, ViewGroup parent) {
+		TextView textViewName = null;
+		ImageView imageViewPic = null;
+		if(convertView == null)
+			convertView = mInflater.inflate(R.layout.rules_listview_item, null);
+
+		textViewName =(TextView)convertView.findViewById(R.id.textViewName);
+		imageViewPic =(ImageView)convertView.findViewById(R.id.imageViewPic);
+
+		textVieweName.setText(rulesDBModels.get(position).getName());
+		textVieweName.setImageResource(R.drawable.pic);
+
+		return convertView;
+		}
+	
+
+###Globalizing variables
+
+* It is a good practice to use less number of global variables and try using local variables. 
+**Where to use global variables?** In a class where there are more functions that are working on the same object and when the object's size is large then its not good to create the same object again and again to use it in different methods. At that time declare the object as global so as to use it in all the methods. 
+
+		ListView listview;
+		List<BasicNameValuePair> listKeyValuePair;
+		private TextView textViewHumidity;
+		private TextView textViewTemprature;
+		private DataOperations dataOperations;
+		
+
+		private void initializeComponents() {
+		textViewHumidity = (TextView) findViewById(R.id.humidityValue);
+		textViewTemprature = (TextView) findViewById(R.id.temperatureValue);
+		listview = (ListView) findViewById(R.id.cityListView);
+		
+		listKeyValuePair= new ArrayList<BasicNameValuePair>();
+			BasicNameValuePair mBasicNameValuePairKey=new BasicNameValuePair("key", "23f6a0ab24185952101705");
+			listKeyValuePair.add(mBasicNameValuePairKey);
+			BasicNameValuePair mBasicNameValuePairQ=new BasicNameValuePair("q", "94301");
+			listKeyValuePair.add(mBasicNameValuePairQ);
+			BasicNameValuePair mBasicNameValuePairFormat=new BasicNameValuePair("format", "json");
+			listKeyValuePair.add(mBasicNameValuePairFormat);
+			BasicNameValuePair mBasicNameValuePairNumOfDay=new BasicNameValuePair("num_of_days", "5");
+			listKeyValuePair.add(mBasicNameValuePairNumOfDay);
+			
+		
+		}
+	
+		public void setJsonDataInModel(String result) {
+		
+		List<WeatherElementModel> weatherElementModels=new ArrayList<WeatherElementModel>();
+		weatherElementModels=weatherModel.getWeatherElementModelsList();
+		
+		dataOperations=new DataOperations(this,weatherElementModels);
+		
+		List<WeatherElementModel> myDatabaseList= new ArrayList<WeatherElementModel>();
+		myDatabaseList=dataOperations.getAllElementModels();
+		
+		StableArrayAdapter adapter = new StableArrayAdapter(this,myDatabaseList);
+		listview.setAdapter(adapter);
+
+		}
+
+		private void setTopViewComponent() {
+		textViewHumidity.setText(weatherModel.getStaticComponentModel().getStringHumidity());
+		textViewDescription.setText(weatherModel.getStaticComponentModel().getStringWeatherDesc());
+		}
+
+###Avoid long methods
+###Reusability
+###Follow design patterns
 
