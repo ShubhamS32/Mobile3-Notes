@@ -38,11 +38,11 @@ Webstorm IDE (Optional)
 The following command generates a new application with the namespace  MyApp  to "/path/to/myapp":
 
 
-	
+	```Html
 		#  Make sure the current working directory is the Sencha Touch 2 directory			
 		cd /path/to/sencha-touch-2-directory
 		sencha generate app MyApp /path/to/create/myapp
-	
+	```
 
 Create virtual host `(http://local.myapp.com)` so that you should be able to navigate to the `MyApp`  from your browser.
 To try it out, simply point any WebKit-based browser to `http://local.myapp.com`
@@ -51,7 +51,7 @@ To try it out, simply point any WebKit-based browser to `http://local.myapp.com`
 ##Basic Application Structure :
 
 The generated application should have the following file structure:
-		
+	```Html
 		.sencha/                # Sencha-specific files (e.g. configuration)
 		app/              	# Application-specific content
 		sencha.cfg      	# Configuration file for Sencha Cmd
@@ -481,7 +481,7 @@ The key function here is `validate()`, which runs all of the configured validati
 ```
 
 In this example we configured the store to use an Ajax Proxy, providing the name of the URL from which to load data and the Reader used to decode the data. In this case the server is returning JSON, so we have set up a Json Reader to read the response. The store automatically loads a set of User model instances from the users.json URL. This URL should return a JSON string similar to the following:
-
+```Html
 		{
 			success: true,
 			users: [
@@ -493,7 +493,7 @@ In this example we configured the store to use an Ajax Proxy, providing the name
 ###Inline Data :
 Stores can also load their data inline. Internally, a Store converts each of the objects we pass in as data into Model instances: (gist link)
 
-
+```Html
 		Ext.create('Ext.data.Store', {
 		model: 'User',
 		data: [
@@ -503,7 +503,7 @@ Stores can also load their data inline. Internally, a Store converts each of the
         { firstName: 'Jamie', lastName: 'Avins' }
 		]
 		});
-
+```
 ###Sorting and Grouping :
 Stores are able to perform sorting, filtering, and grouping locally, as well as to support remote sorting, filtering, and grouping: (gist link)
 
