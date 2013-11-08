@@ -10,7 +10,7 @@ NOW lets know to use a new method of debugging without the use of the cables or 
 		cd android-sdk-mac_x86/platform-tools/
 		```
 		</br>
-**Step 3:** Give this command 
+**Step 3:** Give this command </br>
 		```Android
 		./adb devices
 		```
@@ -18,23 +18,25 @@ NOW lets know to use a new method of debugging without the use of the cables or 
 
 **Step 4:** Kill all other devices (emulators) that are shown except your own mobile.
 
-**Step 5:** In the terminal give the following commands 
+**Step 5:** In the terminal give the following commands </br>
 		```Android
 		./adb tcpip 5555
 		```
-	this command assigns a port to the device .
+	this command assigns a port to the device .</br>
 
-**Step 6:** Then give this command 
+**Step 6:** Then give this command </br>
 		```Android
 		./adb connect 192.168.10.138
 		```
-	if you get this message “connected to 192.168.10.138:5555”
-	WALLAAAAA…. you are good to go .
-if not then 
- do this  
-	give the command 
+		</br>
+	if you get this message “connected to 192.168.10.138:5555”</br>
+	WALLAAAAA…. you are good to go .</br>
+if not then </br>
+ do this  </br>
+	give the command </br>
 		```Android
 		./adb usb
 		```
+		</br>
 	this command reset the usb ports and the devices then repeat the above process from step 3 onwards.
 
