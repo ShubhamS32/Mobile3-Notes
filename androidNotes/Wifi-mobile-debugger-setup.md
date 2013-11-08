@@ -9,6 +9,7 @@ NOW lets know to use a new method of debugging without the use of the cables or 
 		```Android
 		cd android-sdk-mac_x86/platform-tools/
 		```
+		</br>
 **Step 3:** Give this command 
 		```Android
 		./adb devices
