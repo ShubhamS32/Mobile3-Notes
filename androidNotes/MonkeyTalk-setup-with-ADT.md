@@ -1,4 +1,3 @@
-
 ## Setup Process for Monkey Talk
 
 *	Monkey Talk can be downloading from the below address:
@@ -64,4 +63,4 @@ Right click on Android project
 Choose `Run as` option and then `Android Application`
 
 
-
+To refer to the video , look here : http://www.youtube.com/watch?v=9V8esZTh5GI
