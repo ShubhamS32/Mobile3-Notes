@@ -3,9 +3,9 @@ We even know how to run an apk file by transferring the apk through airdroid .</
 
 NOW lets know to use a new method of debugging without the use of the cables or airdroid , but you need to use few of the terminal commands to do the setup.
 
-####Step 1:#### Connect your mobile using the usb cable. (make sure you can see the device in the eclipse in the device tab).
+**Step 1:** Connect your mobile using the usb cable. (make sure you can see the device in the eclipse in the device tab).
 
-*Step 2:* Open the terminal and go to directory “android-sdk-mac_x86/platforms-tools/” or type  this command 
+**Step 2:** Open the terminal and go to directory “android-sdk-mac_x86/platforms-tools/” or type  this command 
 		cd android-sdk-mac_x86/platform-tools/
 
 *Step 3:* Give this command 
