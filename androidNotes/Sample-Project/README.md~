@@ -11,9 +11,19 @@ The IDE is already loaded with the Android Developer Tools plugin and the SDK is
 
 #Sample Projects List
 
-* [NfcTag Writter Demo](#nfctag-writter-demo) [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcTagWritterDemo).
+* [NfcTag Reader Demo](#nfctag-reader-demo)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcReaderDemo).
+* [NfcTag WebService Demo](#nfctag-webservice-demo)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcWebServiceDemo).
+* [NfcTag Writter Demo](#nfctag-writter-demo)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcTagWritterDemo).
+
+###NfcTag Reader Demo
+* This application shows how to read a nfc tag in your application .
+* The data written on the NFC is displayed as a toast(popup).
+
+###NfcTag WebService Demo
+* Application show how to hit an API once you tap on the tag.
+* The API hit returns a response which is displayed on the application.
 
 ###NfcTag Writter Demo
 
-* This application shows how to read a nfc tag in your application.
+* This application shows how to write in a nfc tag.
 * Tap on a tag to launch your application  even when there are other application present on on the mobile.
