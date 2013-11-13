@@ -11,9 +11,10 @@ The IDE is already loaded with the Android Developer Tools plugin and the SDK is
 
 #Sample Projects List
 
-* [Google Direction](#google-direction)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidGoogleDirection).
-* [Google Direction](#google-direction)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidGoogleDirection).
-* [Google Direction](#google-direction)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidGoogleDirection).
+* [Internet Connection Demo](#internet-connection-demo)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/CheckConnectionDemo).
+* [Twitter Login Demo](#twitter-login-demo)		Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/Android-Twitter-Login-Demo).
+* [Expandable List View Demo](#expandable-list-view-demo) Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/Android-Expandable-List-View-Demo).
+* [Grid View Demo](#grid-view-demo)			Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/Android-GridViewDemo).
 * [Bluetooth Demo](#bluetooth-demo)			Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/androidBluetoothDemo).
 * [CheckBox Demo](#checkbox-demo)			Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidCheckBoxDemo).
 * [GridView Image Selector](#gridview-image-selector)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/Android-GridView-ImageSelector).
@@ -25,6 +26,47 @@ The IDE is already loaded with the Android Developer Tools plugin and the SDK is
 * [NfcTag Reader Demo](#nfctag-reader-demo)		Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcReaderDemo).
 * [NfcTag WebService Demo](#nfctag-webservice-demo)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcWebServiceDemo).
 * [NfcTag Writter Demo](#nfctag-writter-demo)		Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcTagWritterDemo).
+
+###Internet Connection Demo
+* This is a demo project to demonstrate how to check for internet connection and any other network connection . 
+* The steps are very easy .
+	* **Step 1:** Give user-permission in the android manifest file . 
+	* **Step 2:** Create a separate class to check for the internet connection. 
+	* **Step 3:** Call the class function in the main acitivity.
+
+###Twitter Login Demo
+* This application shows the use of Twitter in your application.
+* The very first thing you need is the Twitter account. 
+* Once you have the account you need to generate the Api keys. ie.`Customer key` and `Consumer key`.
+
+* There are very simple steps to do this :
+	* **Step 1:** Go to [twitter dev](https://dev.twitter.com/apps/new) and register new application.
+	* **Step 2:** Give some dummy url in the callback url field to make the app as browser app.
+	* **Step 3:** Under the settings tab upload icon and change the access type to Read and Write.
+	* **Step 4:** Copy Consumer Key & Consumer Secret key. 
+	* **Step 5:** Download & extract twitter4j library from twitter4j-android-2.2.6.zip (slimmed version for Android platform). 
+	* **Step 6:** In your mainifest file give the permissions and add the new intent filter.
+	* **Step 7:** Create the new Class to check for the connection and network `ConnectionDetector.java`.
+	* **Step 8 :** In the main Activity give the access to the twitter login `MainActivity.java`
+
+###Expandable List View Demo
+* This application shows how to use the expandable ListView in an application .
+* The most the concept is same as the listView .
+* In the ListView we use to use the adapter `BaseAdapter` to add elements to the list ,whereas in Expandable listView we use `ExpandableBaseAdapter` to add elements to the list . 
+* These steps will guide you to get to the bottom on the working of the list view. 
+	* **Step 1:** Create the main activity layout to hold the ExpandableListView element.
+	* **Step 2:** Create the layout to hold the parent list elements .
+	* **Step 3:** Create the layout to hold the child list element .
+	* **Step 4:** Create the adapter which will populate the list view.
+	* **Step 5:** Create the main activity class that can create the list on header data and list of child data. Its better to use the list of strings for the header data and hashmap to hold the child data.
+
+###Grid View Demo
+* This application will show how to add grid view in an application .
+* All you need is additional adapter that populates the grid elements .
+* Steps to follow are as follows : 
+	* **Step 1 :** Create the Layout for the main Activity containing a gridView.
+	* **Step 2 :** Create the adapter class “ImageAdapter.java”.
+	* **Step 3 :** Create the main Activity class . “MainActivity.java”
 
 ###Bluetooth Demo
 * This application shows you how to use bluetooth of the device.
