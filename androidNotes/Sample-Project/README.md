@@ -11,6 +11,8 @@ The IDE is already loaded with the Android Developer Tools plugin and the SDK is
 
 #Sample Projects List
 
+* [Service Demo](#service-demo)				Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidServiceDemo).
+* [Dynamic Fragment Demo](#dynamic-fragment-demo)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidDynamicFragmentDemo).
 * [Internet Connection Demo](#internet-connection-demo)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/CheckConnectionDemo).
 * [Twitter Login Demo](#twitter-login-demo)		Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/Android-Twitter-Login-Demo).
 * [Expandable List View Demo](#expandable-list-view-demo) Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/Android-Expandable-List-View-Demo).
@@ -26,6 +28,34 @@ The IDE is already loaded with the Android Developer Tools plugin and the SDK is
 * [NfcTag Reader Demo](#nfctag-reader-demo)		Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcReaderDemo).
 * [NfcTag WebService Demo](#nfctag-webservice-demo)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcWebServiceDemo).
 * [NfcTag Writter Demo](#nfctag-writter-demo)		Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcTagWritterDemo).
+
+###Service Demo
+* This application shows how to run a service in the background of a application. 
+* There are 4 basic steps to do this : 
+	* **Step 1:** Giving the entry in the `Mainfest file`. 
+	* **Step 2:** Creating the xml layout ` acitivty_main.xml `
+	* **Step 3:** Creating myService Class . `MyService.java`
+	* **Step 4:** Creating the mainActivity class to handle the service request ` MainActivity.java `
+
+###Dynamic Fragment Demo
+* This application sample will show you how to handle the fragments in a application based on the user click. 
+* There are very specific steps to do this . 
+	* **Step 1:** Create your layout for the fragments . 
+	* **Step 2:** Create your fragments classes. 
+	* **Step 3:** Create your main Activity `MainActivity.java` 
+
+Now to understand the concept of fragment you need to know about few function and methods that fragments need to execute . 
+
+* FragmentManager : (Abstract Class) - interface to interact with the fragment with Activity. 
+* FragmentTransaction : (Abstract Class) - API for performing a set of Fragment operations. 
+	* Transaction should be performed every time you shift from one fragment to another---- 
+	- FUNCTIONS- 
+		-add() : adds a complete new Fragment to the UI. 
+		-remove() : removes the fragment from the activity. 
+		-replace() : replace the existing fragment that was added to layout. 
+		-commit() : make you fragment visible to the UI. 
+	* there cannot be more than one commit on a fragment --- 
+	* if you need to commit the present fragment , replace or remove the previous fragment---
 
 ###Internet Connection Demo
 * This is a demo project to demonstrate how to check for internet connection and any other network connection . 
