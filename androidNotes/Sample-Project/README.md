@@ -279,7 +279,7 @@ You can download it from this link :
 After downloading 
 import the project as a library in your application.
 
-*These are the steps that you need to follow :
+*These are the steps that you need to follow
 	* **Step 1:** Give the permission in the manifest file and declare few services.
 	* **Step 2:** Create a simple layout.
 	* **Step 3:** Write the main class.
