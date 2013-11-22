@@ -36,6 +36,7 @@ The IDE is already loaded with the Android Developer Tools plugin and the SDK is
 * [NfcTag Reader Demo](#nfctag-reader-demo)		Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcReaderDemo).
 * [NfcTag WebService Demo](#nfctag-webservice-demo)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcWebServiceDemo).
 * [NfcTag Writter Demo](#nfctag-writter-demo)		Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcTagWritterDemo).
+* [Beacon Demo](#beacon-demo)				Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidBeaconDemo).
 
 ###Location Demo
 * This application shows how to program you application to show the current location of the mobile.
@@ -266,3 +267,20 @@ and to receive the service you need to use the receiver as a class and you need 
 
 * This application shows how to write in a nfc tag.
 * Tap on a tag to launch your application  even when there are other application present on on the mobile.
+
+###Beacon Demo
+* This application shows how to use the android phone as a monitor for the beacon devices.
+* For this we are using the Radius Networks API.
+* This application monitors the distance between the beacon and the monitoring device(your application).
+* First you have to get the APIs that will be needed in this application.
+You can download it from this link : 
+[radiusNetwork](http://developer.radiusnetworks.com/ibeacon/android/download.html).
+
+After downloading 
+import the project as a library in your application.
+
+*These are the steps that you need to follow :
+	* **Step 1:** Give the permission in the manifest file and declare few services.
+	* **Step 2:** Create a simple layout.
+	* **Step 3:** Write the main class.
+
