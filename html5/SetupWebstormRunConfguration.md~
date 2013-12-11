@@ -7,7 +7,7 @@ This document has defined few steps that you need to follow to setup the run con
 * Goto Run then Edit Configurations…
 * Click on “+” sign at the top left corner(Please do not change parameters in the Defaults).
 * Select JavaScript Debug  then Remote 
-In Name field give the project name (your choice).
+* In Name field give the project name (your choice).
 In URL to open: give the address of index.html from you project.
 	OR
 	you can directly copy the running url from the web browser.
