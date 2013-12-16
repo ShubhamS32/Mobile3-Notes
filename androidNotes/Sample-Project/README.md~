@@ -37,6 +37,8 @@ The IDE is already loaded with the Android Developer Tools plugin and the SDK is
 * [NfcTag WebService Demo](#nfctag-webservice-demo)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcWebServiceDemo).
 * [NfcTag Writter Demo](#nfctag-writter-demo)		Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcTagWritterDemo).
 * [Beacon Demo](#beacon-demo)				Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidBeaconDemo).
+* [Sms Demo](#sms-demo)					Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidSmsInBuildDemo).
+* [Scan Beacon Device Demo](#scan-beacon-device-demo)					Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidScanBeaconDevice).
 
 ###Location Demo
 * This application shows how to program you application to show the current location of the mobile.
@@ -279,8 +281,26 @@ You can download it from this link :
 After downloading 
 import the project as a library in your application.
 
-*These are the steps that you need to follow
+* These are the steps that you need to follow
 	* **Step 1:** Give the permission in the manifest file and declare few services.
 	* **Step 2:** Create a simple layout.
 	* **Step 3:** Write the main class.
 
+###Sms Demo
+* In android there are two ways to send a message from your application. Here i will be using the in-build feature provided by the android.
+* These are the steps you need to follow : 
+	* **Step 1:**Give permission in the manifest file. (AndroidManifest.xml)
+	* **Step 2:**Create the layout with just one button.(activity_main.xml)
+	* **Step 3:**Write a intent in the main class. (MainActivity.java)
+
+###Scan Beacon Device Demo
+* This application show how to use your android set as a beacon scanner. You can find this application in the android sdk version 4.4 samples projects.
+* To get started with the application you need to follow these steps.
+	* Give the permission in the manifest file along with that declare an activity and service.(AndroidManifest.xml)
+	* Create a layout for the main screen to show number of available devices. (listitem_device.xml)
+	* Create a layout for the beacon characteristics. (gatt_services_characteristics.xml) 
+	* Create a layout to handle the action bar. (actionbar_indeterminate_progress.xml)
+	* Write a main class. (DeviceScanActivity.java)
+	* Write a device controller class. (DeviceControlActivity.java)
+	* Write a service class. (BluetoothLeService.java)
+	* Write a class to store the Gatt attribute values. (SampleGattAttributes.java)
