@@ -22,9 +22,9 @@ Click **Apply** and then **OK**.
 
 That’s all the change you needed to make in the Webstorm , now you just have to add an extension in the **Chrome browser**.			
 
-Open **Chrome**.
-In the address bar give this : `chrome://extension/`
-Select **Get more extensions**.
-Search for **jetBrains IDE Support**
-Add the extension and you are Done.
+* Open **Chrome**.
+* In the address bar give this : `chrome://extension/`
+* Select **Get more extensions**.
+* Search for **jetBrains IDE Support**
+* Add the extension and you are Done.
 
