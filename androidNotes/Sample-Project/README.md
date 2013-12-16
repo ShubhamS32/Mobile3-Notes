@@ -38,7 +38,8 @@ The IDE is already loaded with the Android Developer Tools plugin and the SDK is
 * [NfcTag Writter Demo](#nfctag-writter-demo)		Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidNfcTagWritterDemo).
 * [Beacon Demo](#beacon-demo)				Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidBeaconDemo).
 * [Sms Demo](#sms-demo)					Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidSmsInBuildDemo).
-* [Scan Beacon Device Demo](#scan-beacon-device-demo)					Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidScanBeaconDevice).
+* [Scan Beacon Device Demo](#scan-beacon-device-demo)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidScanBeaconDevice).
+* [Social Login Demo](#social-login-demo)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidSocialLoginDemo).
 
 ###Location Demo
 * This application shows how to program you application to show the current location of the mobile.
@@ -304,3 +305,18 @@ import the project as a library in your application.
 	* Write a device controller class. (DeviceControlActivity.java)
 	* Write a service class. (BluetoothLeService.java)
 	* Write a class to store the Gatt attribute values. (SampleGattAttributes.java)
+
+###Social Login Demo
+* This project support login for facebook , twitter and google plus.
+* To make this code fully functional you need to make few changes.
+
+For Facebook :
+You need to add new API key to the string.xml file.
+This key you have to generate from the developers.facebook.com site.
+
+For Twitter : 
+You need to add the consumer key and consumer secret key in the TwitterClass.java file.
+Again you need to generate the twitter key from the Twitter website.
+
+For Google+ :
+You don’t need to add any thing in the code but you must get the certificate from the google website by registering your application.
