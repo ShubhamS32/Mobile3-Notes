@@ -21,11 +21,13 @@ You can have a following error codes to identify the status of your request you 
 # 1) API Name : User registration
 ## URL : /signup
 ### Request Parameters (Mentioning data type is not mandatory)
-* firstName         String     First Name of User
-* lastName          String     Last Name of User
-* emailAddress      String     A valid email id
-* password          String     Password
-* gender            String     Gender of user (m/f)
+* firstName         (String)     First Name of User
+* lastName          (String)     Last Name of User
+* emailAddress      (String)     A valid email id
+* password          (String)     Password
+* gender            (String)     Gender of user (m/f)
+ 
+
 ### Expected Responses
 ### 1) Success : 
 	{
