@@ -11,6 +11,7 @@ The IDE is already loaded with the Android Developer Tools plugin and the SDK is
 
 #Sample Projects List
 
+* [Access Phone Gallary](#access-phone-gallary)		Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndoridAccessPhoneGallary).
 * [Location Demo](#location-demo)			Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/android-LocationDemo).
 * [Tab View Demo](#tab-view-demo)			Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/Android-TabView-Demo).
 * [Seek Bar Demo](#seek-bar-demo)			Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/Android-seek-bar-demo).
@@ -40,6 +41,12 @@ The IDE is already loaded with the Android Developer Tools plugin and the SDK is
 * [Sms Demo](#sms-demo)					Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidSmsInBuildDemo).
 * [Scan Beacon Device Demo](#scan-beacon-device-demo)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidScanBeaconDevice).
 * [Social Login Demo](#social-login-demo)	Source Code : [Github link](https://github.com/ranvijaySingh-Webonise/AndroidSocialLoginDemo).
+
+###Access Phone Gallary
+* This application shows how to access the phone gallary and fetch the selected image back to the application. 
+* To access the gallary we need to call a intent from the main activity or in case of fragments using the context of the main activity.
+* "startActivityForResult(intent, 0)" starts the activity and gets a call back in the "onActivityResult()" function. 
+* In this function you can access the data from the intent data that comes with the argument in this function.
 
 ###Location Demo
 * This application shows how to program you application to show the current location of the mobile.
